@@ -13,23 +13,35 @@ This is the page for a single blog post
         <h1>{{ post.title }}</h1>
         <span id="date">{{ dateString }}</span>
       </div>
+
+      <hr />
     </header>
 
-    <article>
-      <nuxt-content :document="post" />
+    <transition name="fade">
+      <article>
+        <nuxt-content :document="post" />
 
-      <div id="back-to-home">
-        <nuxt-link to="/">Zurück zur Startseite -></nuxt-link>
-      </div>
-    </article>
+        <div id="back-to-home">
+          <nuxt-link to="/">Zurück zur Startseite -></nuxt-link>
+        </div>
+      </article>
+    </transition>
   </div>
 </template>
 
 <script>
-import HomeButton from '~/components/HomeButton'
+import HomeButton from '~/components/global/HomeButton'
+import Logo from '~/components/global/Logo'
+import BlogImage from '~/components/global/BlogImage'
+
+var components = {
+  HomeButton,
+  Logo,
+  BlogImage,
+}
 
 export default {
-  components: [HomeButton],
+  components,
 
   head() {
     return {
@@ -59,11 +71,13 @@ export default {
     66%: img
     */
 
-    /** TODO
-     * All <img> tags are inside of a <p> tag.
-     * Mark all <p> tags with an <img> tag inside them
-     * as 'text-align: center'.
-     */
+    // All <img> tags are inside of a <p> tag.
+    // Mark all <p> tags with an <img> tag inside them
+    // as 'text-align: center'.
+    const content = document.getElementsByClassName('nuxt-content')[0]
+    content.querySelectorAll('p img').forEach((e) => {
+      e.parentElement.classList += 'img-paragraph'
+    })
 
     // listen to scroll events
     var updateScrollBar = () => {
@@ -85,7 +99,7 @@ export default {
   computed: {
     dateString() {
       const s = new Date(this.post.createdAt).toLocaleString()
-      return s.slice(0, s.indexOf(','))
+      return this.post.date || s.slice(0, s.indexOf(','))
     },
   },
 }
@@ -94,7 +108,9 @@ export default {
 <style lang="scss">
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap);
 
+// DEFINITIONS
 $progress-bar-height: 4px;
+$link-accent-color: rgb(89, 89, 255);
 
 #progress-bar {
   position: fixed;
@@ -124,6 +140,35 @@ $progress-bar-height: 4px;
 
     margin-top: 1.5rem;
   }
+
+  hr {
+    height: 1px;
+    width: 100%;
+
+    margin: 2rem auto;
+
+    border: none;
+    color: black;
+    background-color: black;
+  }
+
+  ol,
+  ul {
+    text-align: left;
+  }
+
+  .img-paragraph {
+    text-align: center;
+  }
+
+  a {
+    color: black;
+    text-decoration-color: $link-accent-color;
+  }
+
+  a:hover {
+    color: $link-accent-color;
+  }
 }
 
 header {
@@ -138,9 +183,6 @@ header {
   #head {
     font-family: 'Oswald', serif;
 
-    padding-bottom: 1rem;
-    border-bottom: 1px solid black;
-
     width: 100%;
     margin: 2rem auto;
 
@@ -151,9 +193,28 @@ header {
       margin-left: 20px;
     }
   }
+
+  hr {
+    position: relative;
+    left: 0;
+    animation: 1s 'draw-line';
+    animation-timing-function: cubic-bezier(0.52, 0.34, 0.15, 1);
+  }
+
+  @keyframes draw-line {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
 }
 
 article {
+  text-align: left;
+
   margin: auto;
   padding: 0;
 
@@ -163,16 +224,6 @@ article {
 
   @media screen and (max-width: 768px) {
     width: 100%;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    text-align: left;
   }
 
   h1 {
@@ -190,32 +241,23 @@ article {
     margin-left: 1rem;
   }
 
-  hr {
-    margin: 1rem auto;
-    border: 1px solid rgb(100, 100, 100);
-    border-radius: 2px;
-  }
-
-  text-align: center;
-
   p {
-    text-align: left;
     line-height: 1.6rem;
   }
 
   p,
-  blockquote {
+  blockquote,
+  ol,
+  ul {
     margin-top: 1rem;
   }
 
-  figcaption {
-    color: grey;
-    font-size: 0.9rem;
-    margin-left: 10%;
-  }
-
   blockquote {
-    border-left: 2px solid rgb(36, 36, 255);
+    color: lighten(black, 20%);
+    font-style: italic;
+
+    border-left: 2px solid $link-accent-color;
+    border-radius: 2px;
     padding-left: 0.5rem;
   }
 
@@ -223,9 +265,10 @@ article {
     margin: auto;
     padding: 0;
 
-    width: 66%;
-    min-width: 66%;
-    max-width: 100%;
+    //width: 66%;
+    width: 100%;
+
+    border: 1px solid rgba(0, 0, 0, 0.308);
   }
 }
 

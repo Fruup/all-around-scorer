@@ -12,9 +12,15 @@
 import Vue from 'vue'
 
 export default {
+  head() {
+    return {
+      title: 'All Around Scorer',
+    }
+  },
+
   async asyncData({ $content }) {
     // fetch blog posts
-    const posts = await $content({ deep: true }).only(['title', 'slug']).fetch()
+    const posts = await $content({ deep: true }).only(['title', 'slug', 'date']).fetch()
 
     // return data
     return {
@@ -25,6 +31,9 @@ export default {
 </script>
 
 <style lang="scss">
+// DEFINITIONS
+$link-accent-color: rgb(89, 89, 255);
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -32,6 +41,15 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  
+  a {
+    color: black;
+    text-decoration-color: $link-accent-color;
+  }
+
+  a:hover {
+    color: $link-accent-color;
+  }
 }
 
 .title {

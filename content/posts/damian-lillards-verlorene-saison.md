@@ -1,6 +1,7 @@
 ---
 title: Damian Lillards verlorene Saison
-exerpt: Das Coronavirus hat die ganze Welt fest im Griff und damit auch die NBA. Seit dem 11. März ruht der Ball in der besten Basketball-Liga der Welt. Zeit genug, sich einige Story-Lines der vergangenen Monate anzuschauen.
+excerpt: Das Coronavirus hat die ganze Welt fest im Griff und damit auch die NBA. Seit dem 11. März ruht der Ball in der besten Basketball-Liga der Welt. Zeit genug, sich einige Story-Lines der vergangenen Monate anzuschauen.
+date: 08.04.2020
 ---
 
 # Rückblick und aktuelle Probleme
