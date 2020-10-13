@@ -118,7 +118,7 @@ $link-accent-color: rgb(89, 89, 255);
   left: 0;
   top: 0;
 
-  background-color: rgb(109, 109, 109);
+  background-color: rgb(65, 65, 65);
 
   width: 0vw;
   height: $progress-bar-height;
@@ -172,6 +172,8 @@ $link-accent-color: rgb(89, 89, 255);
 }
 
 header {
+  line-height: 1.2; // relative to font height
+
   margin-top: $progress-bar-height;
   width: 100%;
 
@@ -181,16 +183,20 @@ header {
   }
 
   #head {
-    font-family: 'Oswald', serif;
+    font-family: 'Oswald';
 
     width: 100%;
     margin: 2rem auto;
 
+    h1 {
+      margin-bottom: .5rem;
+    }
+
     #date {
       color: grey;
+
       font-size: 0.9em;
       font-weight: 300;
-      margin-left: 20px;
     }
   }
 
@@ -213,6 +219,7 @@ header {
 }
 
 article {
+  line-height: 1.6;
   text-align: left;
 
   margin: auto;
