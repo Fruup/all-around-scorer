@@ -42,14 +42,14 @@ case $CONTINUE in
             if git push origin gh-pages
             then
                 printf "\n\n\n"
-                printf "${GREEN}[INFO]${NC} The changes to the website are live shortly!\n"
+                printf "${GREEN}[INFO]${NC}: The changes to the website are live shortly!\n"
             else
                 printf "\n\n\n"
-                printf "${RED}[ERROR]${NC} Failed to push website to git repository!\n"
+                printf "${RED}[ERROR]${NC}: Failed to push website to git repository!\n"
             fi
         else
             printf "\n\n\n"
-            printf "${RED}[ERROR]${NC} Failed to generate website!\n"
+            printf "${RED}[ERROR]${NC}: Failed to generate website!\n"
         fi
         ;;
     *)
