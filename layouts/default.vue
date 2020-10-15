@@ -7,7 +7,7 @@
 
 <style lang="scss">
 // Oswald font family
-@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap);
+//@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap);
 
 html {
   font-family: 'Open Sans', sans-serif;
