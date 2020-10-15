@@ -80,7 +80,23 @@ export default {
     })
 
     // listen to scroll events
-    var updateScrollBar = () => {
+    window.addEventListener('scroll', this.updateScrollBar)
+    this.updateScrollBar()
+  },
+
+  destroyed() {
+    window.removeEventListener('scroll', this.updateScrollBar)
+  },
+
+  computed: {
+    dateString() {
+      const s = new Date(this.post.createdAt).toLocaleString()
+      return this.post.date || s.slice(0, s.indexOf(','))
+    },
+  },
+
+  methods: {
+    updateScrollBar() {
       // get scroll percentage
       var h = document.documentElement,
         b = document.body,
@@ -91,16 +107,6 @@ export default {
       // set width of progress bar
       document.getElementById('progress-bar').style.width = scroll * 100 + 'vw'
     }
-
-    window.addEventListener('scroll', updateScrollBar)
-    updateScrollBar()
-  },
-
-  computed: {
-    dateString() {
-      const s = new Date(this.post.createdAt).toLocaleString()
-      return this.post.date || s.slice(0, s.indexOf(','))
-    },
   },
 }
 </script>
