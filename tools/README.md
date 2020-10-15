@@ -15,9 +15,10 @@ starte die Datei 'preview.sh' in diesem Ordner.
 Es öffnet sich ein Browser-Fenster, in dem du die Website testen kannst
 (es kann ein paar Sekunden dauern, bis sich der Server im Hintergrund startet).
 Änderst du etwas an dem Content und speicherst du die Datei ab,
-Lädt sich die Website automatisch neu. Sollte das nicht der Fall sein,
+lädt sich die Website automatisch neu. Sollte das nicht der Fall sein,
 versuche einfach, die Seite mit F5 neu zu laden, oder starte das
 'preview.sh'-Programm neu.
+WICHTIG: Schließe das Programm, indem du Strg+C drückst, sonst läuft der Server im Hintergrund weiter.
 
 Bist du zufrieden mit deiner Arbeit, schließe 'preview.sh' wieder (Strg+C).
 Um zu veröffentlichen, starte 'deploy.sh'.
@@ -25,7 +26,9 @@ Hat alles geklappt, ist die Website in ein paar Minuten online.
 
 ## Markdown
 
-{TODO}
+Markdown ist ein Textformat, das es sehr einfach macht, Text zu strukturieren und Content wie Bilder o. Ä. einzufügen.
+Ich habe einen Beispielpost ('beispiel-post.md') angelegt, in dem alle zur Zeit unterstützten Features von Markdown gezeigt werden.
+Ich empfehle, dir den Post in der Preview ('preview.sh') anzusehen und nebenbei in der Markdowndatei ('content/posts/beispiele/beispiel-post.md') mitzulesen.
 
 Fortgeschrittene Quellen:
 
@@ -35,6 +38,4 @@ Fortgeschrittene Quellen:
 ## Wichtiges zu Posts
 
 Es ist wichtig, ein paar zusätzliche Daten zu jedem Post zu hinterlegen.
-Schau dir die Datei 'beispiel-post.md' an.
-
-{TODO}
+Schau dir die Datei 'beispiel-post.md' als Referenz an.
