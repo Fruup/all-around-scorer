@@ -42,9 +42,6 @@ export default {
 </script>
 
 <style lang="scss">
-// DEFINITIONS
-$link-accent-color: rgb(89, 89, 255);
-
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -53,23 +50,23 @@ $link-accent-color: rgb(89, 89, 255);
 
   a {
     color: black;
-    text-decoration-color: $link-accent-color;
+    text-decoration-color: $accent-color;
   }
 
   a:hover {
-    color: $link-accent-color;
+    color: $accent-color;
   }
 }
 
 .content {
   margin: auto;
-  width: 768px;
+  width: $sm-bp;
 
   padding: 0 1rem;
 
   padding-bottom: 3rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $sm-bp) {
     width: 100vw;
   }
   

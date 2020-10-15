@@ -21,7 +21,6 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    "~/plugins/ghost.js",
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -34,11 +33,18 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxt/content',
+    '@nuxtjs/style-resources',
   ],
+
+  // global style resources (accessible in every style sheet)
+  styleResources: {
+    scss: [
+      '~/assets/scss/global.scss',
+    ]
+  },
 
   // nuxt content options
   content: {
-
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

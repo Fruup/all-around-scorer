@@ -106,11 +106,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap);
-
 // DEFINITIONS
 $progress-bar-height: 4px;
-$link-accent-color: rgb(89, 89, 255);
 
 #progress-bar {
   position: fixed;
@@ -135,7 +132,7 @@ $link-accent-color: rgb(89, 89, 255);
   h4,
   h5,
   h6 {
-    font-family: 'Oswald', serif;
+    font-family: 'Oswald';
     font-weight: 600;
 
     margin-top: 1.5rem;
@@ -163,11 +160,11 @@ $link-accent-color: rgb(89, 89, 255);
 
   a {
     color: black;
-    text-decoration-color: $link-accent-color;
+    text-decoration-color: $accent-color;
   }
 
   a:hover {
-    color: $link-accent-color;
+    color: $accent-color;
   }
 }
 
@@ -227,9 +224,9 @@ article {
 
   padding-bottom: 3rem;
 
-  width: 768px;
+  width: $sm-bp;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $sm-bp) {
     width: 100%;
   }
 
@@ -263,7 +260,7 @@ article {
     color: lighten(black, 20%);
     font-style: italic;
 
-    border-left: 2px solid $link-accent-color;
+    border-left: 2px solid $accent-color;
     border-radius: 2px;
     padding-left: 0.5rem;
   }

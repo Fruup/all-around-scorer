@@ -2,7 +2,7 @@
   <p>
     <img
       :style="{ width: (this.width || 66).clamp(0, 100) + '%' }"
-      :src="'img/' + src"
+      :src='require("~/assets/img/" + src)'
       :alt="alt"
     />
   </p>

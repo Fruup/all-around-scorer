@@ -79,7 +79,7 @@ Hier nun ein Bild eines süßen Biebers:
 
 # Interne Bilder einbetten
 
-Alle internen Bilder werden im Ordner '*/static/img*' aufbewahrt. Willst du eigene Bilder in deinen Posts benutzen, lege sie in diesen Ordner und verwende sie wie folgt in der Markdowndatei:
+Alle internen Bilder werden im Ordner '*assets/img*' aufbewahrt. Willst du eigene Bilder in deinen Posts benutzen, lege sie in diesen Ordner und verwende sie wie folgt in der Markdowndatei:
 
 <blog-image src='katze.jpg' alt='Was ne süße Katze, oder?' width='50'></blog-image>
 
