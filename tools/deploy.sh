@@ -27,7 +27,7 @@ case $CONTINUE in
         cp dist/.git $GIT_TMP
 
         # generate
-        if nuxt generate --fail-on-error
+        if npm run generate --fail-on-error
         then
             # restore .git worktree marker
             mv $GIT_TMP dist/.git
