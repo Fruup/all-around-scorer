@@ -19,7 +19,7 @@ This is the page for a single blog post
 
     <transition name="fade">
       <article>
-        <nuxt-content :document="post" />
+        <nuxt-content align="justify" :document="post" />
 
         <div id="back-to-home">
           <nuxt-link to="/">Zurück zur Startseite -></nuxt-link>
