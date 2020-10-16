@@ -12,7 +12,7 @@ Damit euch dieses, nicht gerade erstrebenswerte, Schicksal erspart bleibt, ist h
 
 # Korbjäger
 
-Max und Ole machen in ihrem [wöchentlichen Plausch mal wieder Rüdigers Nachbarschaft unsicher](https://korbjaeger.podomatic.com/). Bitte, was soll das denn mit der NBA zu tun haben, fragen sich da einige. Doch genau das macht die beiden (ehemaligen) Spox Redakteure aus. Sie sind die Meister der „Almanisierung“: Rüdigers Nachbarschaft, der Vogel Frank und „Es war einmal auf dem Hartholz“ sind nur einige ihrer eingedeutschten Ausdrücke.
+Max und Ole machen in ihrem [wöchentlichen Plausch mal wieder Rüdigers Nachbarschaft unsicher](https://podcast4338ea.podigee.io/). Bitte, was soll das denn mit der NBA zu tun haben, fragen sich da einige. Doch genau das macht die beiden (ehemaligen) Spox Redakteure aus. Sie sind die Meister der „Almanisierung“: Rüdigers Nachbarschaft, der Vogel Frank und „Es war einmal auf dem Hartholz“ sind nur einige ihrer eingedeutschten Ausdrücke.
 
 Von allen hier gelisteten Podcasts ist dieser sicher der innovativste. [Hipper ist da nur Heiko Maas, wenn er morgens aus dem Club heimgeht](https://sz-magazin.sueddeutsche.de/vorgeknoepft-die-modekolumne/hipster-nach-maas-86319). Die beiden servieren euch einmal in der Woche in „knapp unter zwei Stunden“, wie man in London zu sagen pflegt, ein buntes [Potpourri](https://www.duden.de/rechtschreibung/Potpourri) an Formaten. Mein persönliches Highlight ist der „Bandwaggon durch die Association“, bei dem sich die beiden ein chronisch unterbeleuchtetes Team einen Monat anschauen und dieses im Nachgang analysieren. Trockener Abgang inklusive.
 
