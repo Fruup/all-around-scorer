@@ -1,4 +1,5 @@
 ---
+example: true
 title: Dies ist ein Test Markdown!
 excerpt: Wie geht das?
 ---

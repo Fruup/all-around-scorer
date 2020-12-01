@@ -1,4 +1,5 @@
 ---
+example: true
 title: Dieser Post zeigt dir alle Features, die du benutzen kannst.
 excerpt: In diesem Post geht es darum, wie sich die retrograde Venusrotation auf das Paarungsverhalten der philippinischen Weinbergschnecke auswirkt.
 date: 09.11.1989

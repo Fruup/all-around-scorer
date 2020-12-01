@@ -1,6 +1,6 @@
 ---
 title: NBA Baukasten - All Division Starting 5s
-excerpt: TODO
+excerpt: Das wahrscheinlich stärkste All Division Team ist an der Westküste beheimatet. Die Auswahl wurde durch die vielen Minuten LeBrons als Ballhandler deutlich vereinfacht. Mit Leonard und James hat das das Team zwei der womöglich drei besten Individualisten der Liga (Durant fällt durch die Verletzung hier aus der Debatte). Mit Booker ist ein weiterer Elite-Scorer am Start. Bjelica und Chriss wurden nur aufgrund der Restriktionen gewählt, doch gerade die Range des Kings Forwards steht dem Team hervorragend zu Gesicht.
 date: 14.05.2020
 ---
 
