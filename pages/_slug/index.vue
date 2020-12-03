@@ -30,14 +30,20 @@ This is the page for a single blog post
 </template>
 
 <script>
+import Vue from 'vue'
 import HomeButton from '~/components/global/HomeButton'
 import Logo from '~/components/global/Logo'
 import BlogImage from '~/components/global/BlogImage'
+import { Tweet } from 'vue-tweet-embed'
+
+// make twitter component available globally
+Vue.component('Tweet', Tweet)
 
 var components = {
   HomeButton,
   Logo,
   BlogImage,
+  Tweet,
 }
 
 export default {

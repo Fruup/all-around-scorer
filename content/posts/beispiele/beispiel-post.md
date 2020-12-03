@@ -116,3 +116,18 @@ Du kannst sogar auf einen ganz bestimmten Teil deines Blogs verweisen, indem du 
 Sei die Überschrift beispielsweise **'Der Mega Deal'**, ist der Code dafür *'der-mega-deal'*.
 
 [D-Day Review, Mega Deal](/d-day-review#der-mega-deal)
+
+-----------
+
+# Twitter Integration
+
+Um einen Tweet einzubetten, brauchst du nur dessen *id*. Die *id* entnimmst du dem Link des Tweets.
+Beispielsweise besitzt der Tweet mit URL<br>
+https://twitter.com/allaroundscorer/status/1331638395857231872<br>
+die ID **1331638395857231872**.
+
+Standardmäßig ist der Tweet linksbündig ausgerichtet. Um ihn zu zentrieren, benutze **align="center"**.
+
+So sieht das ganze dann aus:
+
+<tweet id="1331638395857231872" align="center"></tweet>
