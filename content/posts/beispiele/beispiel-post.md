@@ -1,4 +1,5 @@
 ---
+example: true
 title: Dieser Post zeigt dir alle Features, die du benutzen kannst.
 excerpt: In diesem Post geht es darum, wie sich die retrograde Venusrotation auf das Paarungsverhalten der philippinischen Weinbergschnecke auswirkt.
 date: 09.11.1989
@@ -109,9 +110,9 @@ Gib einfach den Dateinamen ohne Endung (**.md**) an.
 
 Der Link für die Home-Page lautet **'/'** - ohne Anführungszeichen.
 
-[D-Day Review](d-day-review)
+[D-Day Review](/d-day-review)
 
 Du kannst sogar auf einen ganz bestimmten Teil deines Blogs verweisen, indem du an den Namen ein **'#'** und den Code der Überschrift des Abschnittes anhängst.
 Sei die Überschrift beispielsweise **'Der Mega Deal'**, ist der Code dafür *'der-mega-deal'*.
 
-[D-Day Review, Mega Deal](d-day-review#der-mega-deal)
+[D-Day Review, Mega Deal](/d-day-review#der-mega-deal)

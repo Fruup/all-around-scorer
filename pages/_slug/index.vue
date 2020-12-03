@@ -19,7 +19,7 @@ This is the page for a single blog post
 
     <transition name="fade">
       <article>
-        <nuxt-content :document="post" />
+        <nuxt-content align="justify" :document="post" />
 
         <div id="back-to-home">
           <nuxt-link to="/">Zurück zur Startseite -></nuxt-link>
@@ -79,6 +79,11 @@ export default {
       e.parentElement.classList += 'img-paragraph'
     })
 
+    // Inner-domain <a> tags do not have target='_blank' specified. They should tho.
+    content.querySelectorAll('a').forEach((e) => {
+      e.setAttribute('target', '_blank')
+    })
+
     // listen to scroll events
     window.addEventListener('scroll', this.updateScrollBar)
     this.updateScrollBar()
@@ -106,7 +111,7 @@ export default {
 
       // set width of progress bar
       document.getElementById('progress-bar').style.width = scroll * 100 + 'vw'
-    }
+    },
   },
 }
 </script>
@@ -192,7 +197,7 @@ header {
     margin: 2rem auto;
 
     h1 {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     #date {
