@@ -53,7 +53,15 @@ export default {
     return {
       title: this.post.title,
       meta: [
-        // TODO: insert post description etc.
+        // insert post description
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            this.post.excerpt.length > 100 ?
+              this.post.excerpt.slice(0, 97) + '...' :
+              this.post.excerpt,
+        },
       ],
     }
   },
