@@ -35,6 +35,7 @@ export default {
   modules: [
     '@nuxt/content',
     '@nuxtjs/style-resources',
+    '@nuxtjs/sitemap',
   ],
 
   // global style resources (accessible in every style sheet)
@@ -50,5 +51,31 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+  },
+
+  // sitemap
+  sitemap: {
+    hostname: 'https://all-around-scorer.soon.it/',
+    async routes() {
+      // imports
+      const fs = require('fs');
+      const path = require('path');
+      const SOURCE = './dist/';
+
+      // check if directory is generated route
+      const isRoute = routeName => {
+        const routePath = path.join(SOURCE, routeName);
+        const route = fs.lstatSync(routePath);
+
+        if (!route.isDirectory()) return false;
+
+        const routeContent = fs.readdirSync(routePath);
+
+        return routeContent.length == 1 && routeContent[0] === 'index.html';
+      };
+
+      // return only generated routes
+      return fs.readdirSync(SOURCE).filter(isRoute);
+    },
+  },
 }

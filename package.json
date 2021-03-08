@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.9.0",
+    "@nuxt/ufo": "^0.5.4",
+    "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "vue-tweet-embed": "^2.4.0"
